@@ -1,0 +1,993 @@
+/* ÁREA ADMINSTRATIVA */
+
+/* CONFIGURAÇÕES GERAIS */
+
+a:hover {
+
+       text-decoration: none;
+
+}
+
+.none {
+
+       display: none !important;
+
+}
+
+.loader {
+
+       border: 4px solid #f3f3f3;
+       border-top: 4px solid #2e2d2d; 
+       border-radius: 50%;
+       width: 24px;
+       height: 24px;
+       animation: spin 2s linear infinite;
+
+}
+     
+@keyframes spin {
+
+       0% { transform: rotate(0deg); }
+       100% { transform: rotate(360deg); }
+
+}
+
+.row {
+
+       width: 100%;
+
+}
+
+input:focus{
+
+       outline: none;
+
+}
+
+select:focus{
+
+       outline: none;
+
+}
+
+textarea:focus{
+
+       outline: none;
+
+}
+
+/* TOPO */
+
+body {
+
+       background-color: #eee;
+
+}
+
+section#adm-topo {
+
+       width: 100%;
+
+       background-color: #2e2d2d;
+
+
+}
+
+section#adm-topo img {
+
+       width: 15%;
+
+       padding: 10px 0px;
+
+}
+
+/* NAV-BAR */
+
+.left-side {
+       
+       background-color: white;
+
+       overflow-y: auto;
+
+       overflow-x: hidden;
+
+       height: 100vh;
+
+       position: fixed;
+
+       width: 18%;
+
+       z-index: 99999;
+
+}
+
+.left-side::-webkit-scrollbar {
+
+       display: none;
+
+}
+
+.left-side #adm-nav-bar {
+
+       width: 100%;
+
+}
+
+.left-side #adm-nav-bar .case-logo {
+
+       width: 100%;
+
+       background-color: #eeeeee;
+
+       position: absolute;
+
+       z-index: 999999;
+
+       top: 0;
+
+       height: 15%;
+
+       padding: 0px 20px;
+
+       display: flex;
+
+       align-items: center;
+
+       justify-content: center;
+
+}
+
+.left-side #adm-nav-bar img {
+
+       width: 100%;
+
+}
+
+.left-side #adm-nav-bar ul {
+
+       list-style: none;
+
+       margin: 0px;
+
+       padding-left: 10px;
+
+       padding-top: 20px;
+
+       padding-right: 10px;
+
+       position: absolute;
+
+       top: 15%;
+
+       border-right: 1px solid #cecece;
+
+       width: 100%;
+
+       height: 100%;
+
+}
+
+.left-side #adm-nav-bar ul li {
+
+       margin: 0px;
+
+       padding: 10px;
+
+}
+
+.left-side #adm-nav-bar ul li a {
+
+       color: #7e7e7e;
+
+       font-family: 'Roboto', sans-serif;
+
+       display: flex;
+
+       align-items: center;
+
+       font-size: 18px;
+
+}
+
+.left-side #adm-nav-bar ul li a span {
+
+       position: absolute;
+
+       left: 60px;
+
+}
+
+.left-side #adm-nav-bar ul li a i {
+
+       font-size: 23px;
+
+       position: relative;
+
+       left: 0;
+
+}
+
+.left-side #adm-nav-bar ul li a:hover {
+
+       text-decoration: none;
+
+}
+
+.left-side #adm-nav-bar ul li:hover {
+
+       background-color: #2e2d2d;
+
+}
+.left-side #adm-nav-bar ul li:hover a {
+
+       color: white;
+
+}
+
+/* DASHBOARD */
+
+.wrapper {
+
+       padding: 2% 2% 2% 20%;
+
+       position: relative;
+
+       width: 100%;
+
+}
+
+.wrapper .dashboard{
+
+       padding: 20px;
+
+       width: 100%;
+
+       background-color: white;
+
+       border-radius: 3px;
+
+       border-bottom: 1px solid #cecece;
+
+}
+
+.wrapper .dashboard .box-card {
+
+       border-bottom: 1px solid #cecece;
+
+       border-right: 1px solid #cecece;
+
+       border-radius: 2px;
+
+       padding: 12px;
+
+       margin-bottom: 20px;
+
+}
+
+.wrapper .dashboard .box-card .titulo {
+
+       font-family: 'Roboto', sans-serif;
+
+       font-size: 30px;
+
+       color: #2e2d2d;
+
+       font-weight: 300;
+
+       display: flex;
+
+       align-items: center;
+
+}
+
+.wrapper .dashboard .box-card .titulo i {
+
+       font-size: 40px;
+
+       margin-right: 10px;
+
+}
+
+.wrapper .dashboard .box-card .subtitulo {
+
+       font-family: 'Roboto', sans-serif;
+
+       font-size: 20px;
+
+       color: #2e2d2d;
+
+       font-weight: 300;
+
+}
+
+.wrapper .dashboard .box-card .listagem-conteudo {
+
+       border-bottom: 1px solid #2e2d2d;
+
+}
+
+.wrapper .dashboard .box-card .listagem {
+
+       font-family: 'Roboto', sans-serif;
+
+       padding-top: 10px;
+
+}
+
+.wrapper .dashboard .box-card .listagem .listagem-header {
+
+       background-color: #2e2d2d;
+
+}
+
+.wrapper .dashboard .box-card .listagem .listagem-header .listagem-titulo{
+
+       color: white !important;
+
+}
+
+.wrapper .dashboard .box-card .listagem .listagem-titulo {
+
+       padding: 10px;
+
+       color: #2e2d2d;
+       
+}
+
+/*MODULE INDEX*/
+
+.wrapper .button-case {
+
+       float: right;
+
+       padding: 10px 0px 30px 0px;
+
+}
+
+.wrapper .button-case .button-adicionar {
+
+       color: white;
+
+       background-color: #1B5E20;
+
+       font-family: 'Roboto', sans-serif;
+
+       padding: 14px 18px;
+
+       border-radius: 3px;
+
+}
+
+.wrapper .button-case .button-adicionar:hover {
+
+       background-color: #2E7D32;
+
+}
+
+.wrapper .module-listagem {
+
+       padding: 20px;
+
+       width: 100%;
+
+       background-color: white;
+
+       border-radius: 3px;
+
+       border-bottom: 1px solid #cecece;
+
+}
+
+.wrapper .module-listagem .titulo {
+
+       font-family: 'Roboto', sans-serif;
+
+       font-size: 30px;
+
+       font-weight: bold;
+
+       color: #0D47A1;
+
+       line-height: 26px;
+
+}
+
+.wrapper .module-listagem .subtitulo {
+
+       font-family: 'Roboto', sans-serif;
+
+       font-size: 20px;
+
+       font-weight: 400;
+
+       color: #0D47A1;
+
+}
+
+.wrapper .module-listagem .listagem {
+
+       width: 100%;
+
+}
+
+.wrapper .module-listagem .listagem .listagem-conteudo {
+
+       border-left: 3px solid #0D47A1;
+
+       margin-top: 20px;
+
+       padding: 10px 16px;
+
+       border-bottom: 1px solid #cecece;
+
+       border-bottom-left-radius: 2px;
+
+       border-bottom-right-radius: 2px;
+
+       width: 100%;
+
+}
+
+.wrapper .module-listagem .listagem .listagem-conteudo img {
+
+       width: 100%;
+
+}
+
+.wrapper .module-listagem .listagem .listagem-conteudo .titulo {
+
+       font-family: 'Roboto', sans-serif;
+
+       font-size: 20px;
+
+       font-weight: bold;
+
+       color: #0D47A1;
+
+}
+
+/* MODULE EDITAR */
+
+.wrapper .module-editar {
+
+       padding: 20px;
+
+       width: 100%;
+
+       background-color: white;
+
+       border-radius: 3px;
+
+       border-bottom: 1px solid #cecece;
+
+}
+
+.wrapper .module-editar .titulo {
+
+       font-family: 'Roboto', sans-serif;
+
+       font-size: 30px;
+
+       font-weight: bold;
+
+       color: #0D47A1;
+
+       line-height: 26px;
+
+}
+
+.wrapper .module-editar .subtitulo {
+
+       font-family: 'Roboto', sans-serif;
+
+       font-size: 20px;
+
+       font-weight: 400;
+
+       color: #0D47A1;
+
+}
+
+.wrapper .module-editar form {
+
+       margin-top: 20px;
+
+}
+
+.wrapper .module-editar form .field-input label {
+
+       font-family: 'Roboto', sans-serif;
+
+       font-size: 14px;
+
+       font-weight: bold;
+
+       margin: 0;
+
+       text-transform: uppercase;
+
+}
+
+.wrapper .module-editar form .field-input input {
+
+       font-family: 'Roboto', sans-serif;
+
+       width: 100%;
+
+       background-color: #eeeeee;
+
+       border: none;
+
+       border-bottom: 2px solid #cecece;
+
+       border-radius: 3px;
+
+       font-size: 18px;
+
+       padding: 10px;
+
+       margin-bottom: 10px;
+
+       color: #646464;
+
+}
+
+.wrapper .module-editar form .field-select label {
+
+       font-family: 'Roboto', sans-serif;
+
+       font-size: 14px;
+
+       font-weight: bold;
+
+       margin: 0;
+
+       text-transform: uppercase;
+
+}
+
+.wrapper .module-editar form .field-select select {
+
+       font-family: 'Roboto', sans-serif;
+
+       width: 100%;
+
+       background-color: #eeeeee;
+
+       border: none;
+
+       border-bottom: 2px solid #cecece;
+
+       border-radius: 3px;
+
+       font-size: 18px;
+
+       padding: 10px;
+
+       margin-bottom: 10px;
+
+       color: #646464;
+
+}
+
+.wrapper .module-editar form .field-file input {
+
+       font-family: 'Roboto', sans-serif;
+
+       width: 100%;
+
+       background-color: #eeeeee;
+
+       border: none;
+
+       border-bottom: 2px solid #cecece;
+
+       border-radius: 3px;
+
+       font-size: 14px;
+
+       padding: 10px;
+
+       margin-bottom: 10px;
+
+       color: #646464;
+
+}
+
+.wrapper .module-editar form .field-file label {
+
+       font-family: 'Roboto', sans-serif;
+
+       font-size: 14px;
+
+       font-weight: bold;
+
+       margin: 0;
+
+       text-transform: uppercase;
+
+}
+
+.wrapper .module-editar form .field-button {
+
+       float: right;
+
+       margin-top: 10px;
+
+       background-color: #1B5E20;
+
+       display: flex;
+
+       align-items: center;
+
+       border-radius: 3px;
+       
+}
+
+.wrapper .module-editar form .field-button label {
+
+       display: flex;
+
+       align-items: center;
+
+       color: white;
+
+       padding-right: 12px;
+
+       cursor: pointer;
+
+       margin: 0px;
+
+}
+
+.wrapper .module-editar form .field-textarea textarea {
+
+       resize: none;
+
+       font-family: 'Roboto', sans-serif;
+
+       width: 100%;
+
+       background-color: #eeeeee;
+
+       border: none;
+
+       border-bottom: 2px solid #cecece;
+
+       border-radius: 3px;
+
+       font-size: 14px;
+
+       padding: 10px;
+
+       margin-bottom: 20px;
+
+       color: #646464;
+
+}
+
+.wrapper .module-editar form .field-textarea label {
+
+       font-family: 'Roboto', sans-serif;
+
+       font-size: 14px;
+
+       font-weight: bold;
+
+       margin: 0;
+
+       text-transform: uppercase;
+
+}
+
+.wrapper .module-editar form .field-button label i {
+
+       font-size: 22px;
+
+}
+
+.wrapper .module-editar form .field-button input {
+
+       border: none;
+
+       background-color: #1B5E20;
+
+       color: white;
+
+       font-family: 'Roboto', sans-serif;
+
+       font-size: 18px;
+
+       padding: 10px 14px 10px 24px;
+
+       cursor: pointer;
+
+       border-radius: 30px;
+
+}
+
+.wrapper .module-editar form .field-button input:focus {
+
+       outline: none;
+
+}
+
+.wrapper .module-editar form .field-button:hover input,
+.wrapper .module-editar form .field-button:hover{
+
+       background-color: #2E7D32;
+
+}
+
+/* MODULE ADICIONAR */
+
+.wrapper .module-adicionar {
+
+       padding: 20px;
+
+       width: 100%;
+
+       background-color: white;
+
+       border-radius: 3px;
+
+       border-bottom: 1px solid #cecece;
+
+}
+
+.wrapper .module-adicionar .titulo {
+
+       font-family: 'Roboto', sans-serif;
+
+       font-size: 30px;
+
+       font-weight: bold;
+
+       color: #0D47A1;
+
+       line-height: 26px;
+
+}
+
+.wrapper .module-adicionar .subtitulo {
+
+       font-family: 'Roboto', sans-serif;
+
+       font-size: 20px;
+
+       font-weight: 400;
+
+       color: #0D47A1;
+
+}
+
+.wrapper .module-adicionar form {
+
+       margin-top: 20px;
+
+}
+
+.wrapper .module-adicionar form .field-input label {
+
+       font-family: 'Roboto', sans-serif;
+
+       font-size: 14px;
+
+       font-weight: bold;
+
+       margin: 0;
+
+       text-transform: uppercase;
+
+}
+
+.wrapper .module-adicionar form .field-input input {
+
+       font-family: 'Roboto', sans-serif;
+
+       width: 100%;
+
+       background-color: #eeeeee;
+
+       border: none;
+
+       border-bottom: 2px solid #cecece;
+
+       border-radius: 3px;
+
+       font-size: 18px;
+
+       padding: 10px;
+
+       margin-bottom: 10px;
+
+       color: #646464;
+
+}
+
+.wrapper .module-adicionar form .field-select label {
+
+       font-family: 'Roboto', sans-serif;
+
+       font-size: 14px;
+
+       font-weight: bold;
+
+       margin: 0;
+
+       text-transform: uppercase;
+
+}
+
+.wrapper .module-adicionar form .field-select select {
+
+       font-family: 'Roboto', sans-serif;
+
+       width: 100%;
+
+       background-color: #eeeeee;
+
+       border: none;
+
+       border-bottom: 2px solid #cecece;
+
+       border-radius: 3px;
+
+       font-size: 18px;
+
+       padding: 10px;
+
+       margin-bottom: 10px;
+
+       color: #646464;
+
+}
+
+.wrapper .module-adicionar form .field-file input {
+
+       font-family: 'Roboto', sans-serif;
+
+       width: 100%;
+
+       background-color: #eeeeee;
+
+       border: none;
+
+       border-bottom: 2px solid #cecece;
+
+       border-radius: 3px;
+
+       font-size: 14px;
+
+       padding: 10px;
+
+       margin-bottom: 10px;
+
+       color: #646464;
+
+}
+
+.wrapper .module-adicionar form .field-file label {
+
+       font-family: 'Roboto', sans-serif;
+
+       font-size: 14px;
+
+       font-weight: bold;
+
+       margin: 0;
+
+       text-transform: uppercase;
+
+}
+
+.wrapper .module-adicionar form .field-textarea textarea {
+
+       resize: none;
+
+       font-family: 'Roboto', sans-serif;
+
+       width: 100%;
+
+       background-color: #eeeeee;
+
+       border: none;
+
+       border-bottom: 2px solid #cecece;
+
+       border-radius: 3px;
+
+       font-size: 14px;
+
+       padding: 10px;
+
+       margin-bottom: 20px;
+
+       color: #646464;
+
+}
+
+.wrapper .module-adicionar form .field-textarea label {
+
+       font-family: 'Roboto', sans-serif;
+
+       font-size: 14px;
+
+       font-weight: bold;
+
+       margin: 0;
+
+       text-transform: uppercase;
+
+}
+
+.wrapper .module-adicionar form .field-button {
+
+       float: right;
+
+       margin-top: 10px;
+
+       background-color: #1B5E20;
+
+       display: flex;
+
+       align-items: center;
+
+       border-radius: 3px;
+       
+}
+
+.wrapper .module-adicionar form .field-button label {
+
+       display: flex;
+
+       align-items: center;
+
+       color: white;
+
+       padding-right: 12px;
+
+       cursor: pointer;
+
+       margin: 0px;
+
+}
+
+.wrapper .module-adicionar form .field-button label i {
+
+       font-size: 22px;
+
+}
+
+.wrapper .module-adicionar form .field-button input {
+
+       border: none;
+
+       background-color: #1B5E20;
+
+       color: white;
+
+       font-family: 'Roboto', sans-serif;
+
+       font-size: 18px;
+
+       padding: 10px 14px 10px 24px;
+
+       cursor: pointer;
+
+       border-radius: 30px;
+
+}
+
+.wrapper .module-adicionar form .field-button input:focus {
+
+       outline: none;
+
+}
+
+.wrapper .module-adicionar form .field-button:hover input,
+.wrapper .module-adicionar form .field-button:hover{
+
+       background-color: #2E7D32;
+
+}

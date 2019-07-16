@@ -1,0 +1,95 @@
+body {
+
+       display: flex;
+
+       justify-content: center;
+
+       background-color: white;
+
+}
+
+.box-login {
+
+       position: absolute;
+       
+       top: 50%;
+
+       transform: translateY(-50%);
+
+       background-color: #2e2d2d;
+
+       padding: 20px 40px;
+
+}
+
+.box-login img {
+
+       width: 300px;
+
+       padding: 40px 80px;
+
+}
+
+.box-login form {
+
+       width: 100%;
+
+}
+
+.box-login .field-input input {
+
+       width: 100%;
+
+       text-align: center;
+
+       font-family: 'Roboto', sans-serif;
+
+       border: none;
+
+       background-color: rgb(218, 218, 218);
+
+       margin-bottom: 15px;
+
+       padding: 10px;
+
+       background-color: white;
+
+}
+
+.box-login .field-button {
+
+       text-align: center;
+
+}
+
+.box-login .field-button input {
+
+       color: white;
+
+       border: none;
+
+       background-color: #2e2d2d;
+
+       border: 1px solid white;
+
+       font-family: 'Roboto', sans-serif;
+
+       width: 100%;
+
+       padding: 8px 0px;
+
+       margin-bottom: 20px;
+
+       transition: all .2s ease-in-out;
+
+}
+
+.box-login .field-button input:hover {
+
+       background-color: white;
+
+       color: #2e2d2d;
+
+       cursor: pointer;
+
+}

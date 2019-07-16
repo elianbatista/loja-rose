@@ -1,0 +1,12 @@
+{
+    "name": "elian/rose",
+    "authors": [
+        {
+            "name": "Elian Batista",
+            "email": "elianbatista2000@gmail.com"
+        }
+    ],
+    "require": {
+        "jbroadway/urlify": "^1.1"
+    }
+}
