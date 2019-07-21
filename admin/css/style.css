@@ -254,13 +254,29 @@ section#adm-topo img {
 
        border-bottom: 1px solid #cecece;
 
-       border-right: 1px solid #cecece;
-
        border-radius: 2px;
 
        padding: 12px;
 
        margin-bottom: 20px;
+
+}
+
+.wrapper .dashboard .box-card .informacoes {
+
+       font-family: 'Roboto', sans-serif;
+
+       font-size: 20px;
+
+}
+
+.wrapper .dashboard .box-card .informacoes span {
+
+       font-size: 26px;
+
+       font-weight: bold;
+
+       color: #E65100;
 
 }
 
@@ -428,6 +444,18 @@ section#adm-topo img {
 
 }
 
+.wrapper .module-listagem .listagem .listagem-conteudo .status {
+
+       font-family: 'Roboto', sans-serif;
+
+       font-size: 18px;
+
+       color: #E65100;
+
+       font-weight: bold;
+
+}
+
 .wrapper .module-listagem .listagem .listagem-conteudo img {
 
        width: 100%;
@@ -459,6 +487,60 @@ section#adm-topo img {
        border-radius: 3px;
 
        border-bottom: 1px solid #cecece;
+
+}
+
+.wrapper .module-editar .produtos-listagem .listagem-conteudo {
+
+       padding: 10px;
+
+       border: 1px solid #ccc;
+
+       margin: 10px 0px;
+
+       border-radius: 3px;
+
+}
+
+.wrapper .module-editar .produtos-listagem .listagem-conteudo img {
+
+       width: 100%;
+
+}
+
+.wrapper .module-editar .status {
+
+       font-family: 'Roboto', sans-serif;
+
+       font-size: 18px;
+
+       color: #E65100;
+
+       font-weight: bold;
+
+       padding-top: 30px;
+
+}
+
+.wrapper .module-editar .status .button {
+
+       color: white;
+
+       background-color: #E65100;
+
+       display: inline-block;
+
+       padding: 12px 16px;
+
+       cursor: pointer;
+
+}
+
+.wrapper .module-editar .produtos-listagem .listagem-conteudo .produto-listagem-titulo {
+
+       font-family: 'Roboto', sans-serif;
+
+       font-size: 20px;
 
 }
 

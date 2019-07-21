@@ -8,7 +8,7 @@
 
                             <div class="section-title">
 
-                                   Nossos Últimos Lançamentos
+                                   Últimas Novidades
 
                             </div>
 
@@ -18,87 +18,53 @@
 
               <div class="row">
 
-                     <div class="col-sm-3">
+                     <?php
 
-                            <div class="case-produto">
+                     $buscarLancamentos = $mysqli->query('SELECT * FROM `produtos` ORDER BY `id` DESC LIMIT 4');
 
-                                   <div class="white-background"></div>
+                     while($lancamento = $buscarLancamentos->fetch_object()){
 
-                                   <img src="/img/roupas/blusa-1.jpg" alt="">
+                     ?>
 
-                                   <div class="produto-titulo">
+                     <div class="col-6 col-sm-6 col-lg-3">
 
-                                          Blusa Masculina 1
+                            <a href="/produto/<?=$lancamento->id;?>/<?=URLify::filter($lancamento->nome);?>">
 
-                                   </div>
+                                   <div class="case-produto">
 
-                            </div>
+                                          <div class="white-background"></div>
 
-                     </div>
+                                          <img src="/admin/imagens/produtos/<?=$lancamento->imagem;?>" alt="<?=$lancamento->nome?>">
 
-                     <div class="col-sm-3">
+                                          <div class="produto-titulo">
 
-                            <div class="case-produto">
+                                                 <?=$lancamento->nome;?>
 
-                                   <div class="white-background"></div>
+                                          </div>
 
-                                   <img src="/img/roupas/blusa-1.jpg" alt="">
+                                          <div class="produto-preco">
+                                          
+                                                 R$ <?=$lancamento->preco;?>
+                                          
+                                          </div>
 
-                                   <div class="produto-titulo">
-
-                                          Blusa Masculina 1
-
-                                   </div>
-
-                            </div>
-
-                     </div>
-
-                     <div class="col-sm-3">
-
-                            <div class="case-produto">
-
-                                   <div class="white-background"></div>
-
-                                   <img src="/img/roupas/blusa-2.jpg" alt="">
-
-                                   <div class="produto-titulo">
-
-                                          Blusa Masculina 1
+                                          <div class="adicionar-carrinho">
+                                          
+                                                 <span>+ Detalhes</span>
+                                          
+                                          </div>
 
                                    </div>
-
-                            </div>
-
-                     </div>
-
-                     <div class="col-sm-3">
-
-                            <div class="case-produto">
-
-                                   <div class="white-background"></div>
-
-                                   <img src="/img/roupas/blusa-2.jpg" alt="">
-
-                                   <div class="produto-titulo">
-
-                                          Blusa Masculina 1
-
-                                   </div>
-
-                            </div>
+                            
+                            </a>
 
                      </div>
 
-              </div>
+                     <?php
 
-              <div class="row">
+                     }
 
-                     <div class="col-sm-12" align="center">
-
-                            <a href="/" class="ver-tudo">Ver Tudo</a>
-
-                     </div>
+                     ?>
 
               </div>
 
@@ -116,7 +82,7 @@
 
                             <div class="section-title">
 
-                                   Camisas
+                                   Ofertas Imperdíveis
 
                             </div>
 
@@ -126,195 +92,53 @@
 
               <div class="row">
 
-                     <div class="col-sm-3">
+                     <?php
 
-                            <div class="case-produto">
+                     $buscarOfertas = $mysqli->query('SELECT * FROM `produtos` ORDER BY RAND() LIMIT 4');
 
-                                   <div class="white-background"></div>
+                     while($oferta = $buscarOfertas->fetch_object()){
 
-                                   <img src="/img/roupas/blusa-1.jpg" alt="">
+                     ?>
 
-                                   <div class="produto-titulo">
+                     <div class="col-6 col-sm-6 col-lg-3">
 
-                                          Blusa Masculina 1
+                            <a href="/produto/<?=$oferta->id?>/<?=URLify::filter($oferta->nome);?>">
 
-                                   </div>
+                                   <div class="case-produto">
 
-                            </div>
+                                          <div class="white-background"></div>
 
-                     </div>
+                                          <img src="/admin/imagens/produtos/<?=$oferta->imagem;?>" alt="<?=$oferta->nome?>">
 
-                     <div class="col-sm-3">
+                                          <div class="produto-titulo">
 
-                            <div class="case-produto">
+                                                 <?=$oferta->nome;?>
 
-                                   <div class="white-background"></div>
+                                          </div>
 
-                                   <img src="/img/roupas/blusa-1.jpg" alt="">
+                                          <div class="produto-preco">
+                                          
+                                                 R$ <?=$oferta->preco;?>
+                                          
+                                          </div>
 
-                                   <div class="produto-titulo">
-
-                                          Blusa Masculina 1
-
-                                   </div>
-
-                            </div>
-
-                     </div>
-
-                     <div class="col-sm-3">
-
-                            <div class="case-produto">
-
-                                   <div class="white-background"></div>
-
-                                   <img src="/img/roupas/blusa-2.jpg" alt="">
-
-                                   <div class="produto-titulo">
-
-                                          Blusa Masculina 1
+                                          <div class="adicionar-carrinho">
+                                          
+                                                 <span>+ Detalhes</span>
+                                          
+                                          </div>
 
                                    </div>
 
-                            </div>
+                            </a>
 
                      </div>
 
-                     <div class="col-sm-3">
+                     <?php
 
-                            <div class="case-produto">
+                     }
 
-                                   <div class="white-background"></div>
-
-                                   <img src="/img/roupas/blusa-2.jpg" alt="">
-
-                                   <div class="produto-titulo">
-
-                                          Blusa Masculina 1
-
-                                   </div>
-
-                            </div>
-
-                     </div>
-
-              </div>
-
-              <div class="row">
-
-                     <div class="col-sm-12" align="center">
-
-                            <a href="/" class="ver-tudo">Ver Tudo</a>
-
-                     </div>
-
-              </div>
-
-       </div>
-
-</section>
-
-<section id="lancamentos">
-
-       <div class="container">
-
-              <div class="row">
-
-                     <div class="col-sm-12">
-
-                            <div class="section-title">
-
-                                   Bermudas
-
-                            </div>
-
-                     </div>
-
-              </div>
-
-              <div class="row">
-
-                     <div class="col-sm-3">
-
-                            <div class="case-produto">
-
-                                   <div class="white-background"></div>
-
-                                   <img src="/img/roupas/blusa-1.jpg" alt="">
-
-                                   <div class="produto-titulo">
-
-                                          Blusa Masculina 1
-
-                                   </div>
-
-                            </div>
-
-                     </div>
-
-                     <div class="col-sm-3">
-
-                            <div class="case-produto">
-
-                                   <div class="white-background"></div>
-
-                                   <img src="/img/roupas/blusa-1.jpg" alt="">
-
-                                   <div class="produto-titulo">
-
-                                          Blusa Masculina 1
-
-                                   </div>
-
-                            </div>
-
-                     </div>
-
-                     <div class="col-sm-3">
-
-                            <div class="case-produto">
-
-                                   <div class="white-background"></div>
-
-                                   <img src="/img/roupas/blusa-2.jpg" alt="">
-
-                                   <div class="produto-titulo">
-
-                                          Blusa Masculina 1
-
-                                   </div>
-
-                            </div>
-
-                     </div>
-
-                     <div class="col-sm-3">
-
-                            <div class="case-produto">
-
-                                   <div class="white-background"></div>
-
-                                   <img src="/img/roupas/blusa-2.jpg" alt="">
-
-                                   <div class="produto-titulo">
-
-                                          Blusa Masculina 1
-
-                                   </div>
-
-                            </div>
-
-                     </div>
-
-              </div>
-
-              <div class="row">
-
-                     <div class="col-sm-12" align="center">
-
-                            <a href="/" class="ver-tudo">Ver Tudo</a>
-
-                     </div>
+                     ?>
 
               </div>
 

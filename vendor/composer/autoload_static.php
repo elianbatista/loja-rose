@@ -6,6 +6,20 @@ namespace Composer\Autoload;
 
 class ComposerStaticInita4bd0b1d29eb021d8b271c00f8de6093
 {
+    public static $prefixLengthsPsr4 = array (
+        'P' => 
+        array (
+            'PHPMailer\\PHPMailer\\' => 20,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'PHPMailer\\PHPMailer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
+        ),
+    );
+
     public static $prefixesPsr0 = array (
         'U' => 
         array (
@@ -16,10 +30,17 @@ class ComposerStaticInita4bd0b1d29eb021d8b271c00f8de6093
         ),
     );
 
+    public static $classMap = array (
+        'Zebra_Pagination' => __DIR__ . '/..' . '/stefangabos/zebra_pagination/Zebra_Pagination.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixLengthsPsr4 = ComposerStaticInita4bd0b1d29eb021d8b271c00f8de6093::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInita4bd0b1d29eb021d8b271c00f8de6093::$prefixDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInita4bd0b1d29eb021d8b271c00f8de6093::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInita4bd0b1d29eb021d8b271c00f8de6093::$classMap;
 
         }, null, ClassLoader::class);
     }

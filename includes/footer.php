@@ -18,24 +18,18 @@
 
                                           <span class="map-text"><a href="/">Página Inicial</a></span>
 
-                                          <span class="map-text"><a href="/">Camisas</a></span>
+                                          <span class="map-text"><a href="/produtos/camisas">Camisas</a></span>
 
-                                          <span class="map-text"><a href="/">Bermudas</a></span>
-
-                                          <span class="map-text"><a href="/">Tênis</a></span>
+                                          <span class="map-text"><a href="/produtos/bermudas">Bermudas</a></span>
 
 
                                    </div>
 
                                    <div class="col-sm-6">
 
-                                          <span class="map-text"><a href="/">Institucional</a></span>
+                                          <span class="map-text"><a href="/produtos/moletons">Moletons</a></span>
 
-                                          <span class="map-text"><a href="/">Fornecedores</a></span>
-
-                                          <span class="map-text"><a href="/">Política de Entrega</a></span>
-
-                                          <span class="map-text"><a href="/">Fale Conosco</a></span>
+                                          <span class="map-text"><a href="/fale-conosco">Fale Conosco</a></span>
 
                                    </div>
 
@@ -43,37 +37,17 @@
 
                      </div>
 
-                     <div class="col-sm-6">
+                     <div class="col-sm-6" align="center">
 
-                            <div class="footer-title">
+                            <div class="footer-title" >
 
-                                   Saiba as Novidades
+                                   Site Seguro
 
                             </div>
 
-                            <form action="" class="newsletter">
+                            <div class="case-selo" align="center">
 
-                                   <div class="field-input">
-
-                                          <i class="material-icons">email</i>
-
-                                          <input type="text" class="email" name="email">
-
-                                   </div>
-
-                                   <div class="field-button">
-
-                                          <input type="submit" value="Assine">
-
-                                   </div>
-
-                            </form>
-
-                            <div class="case-icons">
-
-                                   <img src="/img/icons/facebook.png" alt="">
-
-                                   <img src="/img/icons/instagram.png" alt="">
+                                   <img src="/img/icons/selo.png" alt="">
 
                             </div>
 
@@ -87,9 +61,29 @@
 
               <div class="container">
 
-                     <span class="left-text">© 2019 por Rose Moda Masculina</span>
+                     <div class="left-text">© 2019 por Rose Moda Masculina</div>
 
-                     <span class="right-text">Desenvolvido pela Equipe Rose</span>
+                     <div class="right-text">
+                            
+                            Desenvolvido pela Equipe Rose
+
+                            <div class="case-icons">
+
+                                   <a href="/" target="_blank">      
+
+                                          <img src="/img/icons/facebook.png" alt="Logo Facebook">
+
+                                   </a>
+
+                                   <a href="https://www.instagram.com/lojarose.es" target="_blank">
+
+                                          <img src="/img/icons/instagram.png" alt="Logo Instagram">
+
+                                   </a>
+
+                            </div>
+                     
+                     </div>
 
               </div>
 

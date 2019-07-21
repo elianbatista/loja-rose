@@ -8,4 +8,20 @@ $(document).ready(function(){
 
        });
 
+       $('.left-case i').on('click', function(){
+
+              $('section#topo nav').addClass('activated');
+
+              $('.background-gray').addClass('activated');
+
+       });
+
+       $('.top-bar .right-case i').on('click', function(){
+
+              $('section#topo nav').removeClass('activated');
+
+              $('.background-gray').removeClass('activated');
+
+       });
+
 });

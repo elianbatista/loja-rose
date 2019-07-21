@@ -22,7 +22,9 @@
 
                      `sub_categoria`,
 
-                     `categoria_pai`
+                     `categoria_pai`,
+
+                     `tags`
 
 
               )
@@ -35,7 +37,9 @@
 
                      "' . $sub_categoria . '",
 
-                     "' . $categoria_pai . '"
+                     "' . $categoria_pai . '",
+
+                     "' . $tags . '"
 
               )
 
@@ -61,13 +65,17 @@
 
               $categoria_pai = $_POST['categoria_pai'];
 
+              $tags = $_POST['tags'];
+
               $editarCategoria = $mysqli->query('UPDATE `categorias` SET
               
                      `titulo` = "' . $titulo . '",
 
                      `sub_categoria` = "' . $sub_categoria . '",
 
-                     `categoria_pai` = "' . $categoria_pai . '"
+                     `categoria_pai` = "' . $categoria_pai . '",
+
+                     `tags` = "' . $tags . '"
 
               WHERE `id` = ' . $id);
 

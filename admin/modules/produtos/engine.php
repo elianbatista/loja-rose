@@ -24,6 +24,10 @@
 
               $tamanho = addslashes(trim($_POST['tamanho']));
 
+              $precoCompra = addslashes(trim($_POST['precoCompra']));
+
+              $tags = addslashes(trim($_POST['tags']));
+
               if ( isset( $_FILES[ 'imagem' ][ 'name' ] ) && $_FILES[ 'imagem' ][ 'error' ] == 0 ) {
                   
                      $arquivo_tmp = $_FILES[ 'imagem' ][ 'tmp_name' ];
@@ -91,7 +95,11 @@
 
                      `marca`,
 
-                     `imagem`
+                     `imagem`,
+
+                     `precoCompra`,
+
+                     `tags`
 
               )
 
@@ -113,7 +121,11 @@
 
                      "' . $marca . '",
 
-                     "' . $novoNome . '"
+                     "' . $novoNome . '",
+
+                     "' . $precoCompra . '",
+
+                     "' . $tags . '"
 
               )
 
@@ -150,6 +162,10 @@
               $preco = addslashes(trim($_POST['preco']));
 
               $tamanho = addslashes(trim($_POST['tamanho']));
+
+              $precoCompra = addslashes(trim($_POST['precoCompra']));
+
+              $tags = addslashes(trim($_POST['tags']));
 
               if ( isset( $_FILES[ 'imagem' ][ 'name' ] ) && $_FILES[ 'imagem' ][ 'error' ] == 0 ) {
                   
@@ -214,7 +230,11 @@
 
                      `categoria` = "' . $categoria . '",
 
-                     `marca` = "' . $marca . '"        
+                     `marca` = "' . $marca . '",
+                     
+                     `precoCompra` = "' . $precoCompra . '",
+
+                     `tags` = "' . $tags . '"
 
               WHERE `id` = ' . $id);
 

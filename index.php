@@ -2,6 +2,8 @@
 
        require_once('engine/connect.php');
 
+       session_start();
+
 ?>
 
 <!DOCTYPE html>

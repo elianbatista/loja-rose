@@ -8,6 +8,8 @@
 
 <link rel="stylesheet" href="/css/style.css">
 
+<link rel="stylesheet" href="/css/responsive.css">
+
 <link rel="stylesheet" href="/plugins/slick/slick.css">
 
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -15,3 +17,5 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
 
 <script src="https://kit.fontawesome.com/869ee7b5d2.js"></script>
+
+<?php require_once('vendor/jbroadway/urlify/URLify.php');?>

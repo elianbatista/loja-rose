@@ -28,97 +28,29 @@ RewriteRule ^admin/login/?$ /admin/login.php [NC,L]
               RewriteRule ^admin/produtos/adicionar/?$ /admin/modules/produtos/adicionar.php [NC,L]
               RewriteRule ^admin/produtos/editar/([a-z-0-9-]+)-([a-z-0-9-]+)/?$ /admin/modules/produtos/editar.php?id=$2 [NC,L]
 
-RewriteRule ^admin/cadastro/?$ /admin/cadastro.php [NC,L]
-RewriteRule ^admin/dashboard/?$ /admin/index.php?dir=dashboard&page=dashboard [NC,L]
-RewriteRule ^admin/dinamic-change-options/?$ /admin/controller/main/ajax-calls/dinamicChangeOptions.php [NC,L]
-RewriteRule ^admin/reorder-gallery/?$ /admin/controller/main/ajax-calls/reorderGallery.php [QSA,NC,L]
+              #PEDIDOS
 
+              RewriteRule ^admin/pedidos/?$ /admin/modules/pedidos/index.php [NC,L]
+              RewriteRule ^admin/pedidos/adicionar/?$ /admin/modules/pedidos/adicionar.php [NC,L]
+              RewriteRule ^admin/pedidos/editar/([a-z-0-9-]+)-([a-z-0-9-]+)/?$ /admin/modules/pedidos/editar.php?id=$2 [NC,L]
+              RewriteRule ^admin/pedidos/visualizar/([a-z-0-9-]+)/?$ /admin/modules/pedidos/visualizar.php?id=$1 [NC,L]
 
-# URLs estáticas do site
-RewriteRule ^home/?$ /index.php [NC,L]   
-RewriteRule ^fale-conosco/?$ /fale-conosco.php?fale-conosco=1 [NC,L] 
-RewriteRule ^planos/?$ /planos.php [NC,L] 
-RewriteRule ^depoimentos/?$ /depoimentos.php [NC,L] 
-RewriteRule ^convenios/?$ /convenios.php [NC,L] 
-RewriteRule ^solicite-convenio/?$ /solicite-convenio.php [NC,L] 
+#LOJA
 
-RewriteRule ^vagas/?$ /vagas-list.php?pagina=1&tipo_pagina=vagas [NC,L]
-RewriteRule ^vagas-([0-9]+)/?$ /vagas-list.php?pagina=$1&tipo_pagina=vagas [NC,L]
-RewriteRule ^vagas/([a-z-0-9-]+)-([a-z-0-9-]+)/?$ /default-view.php?id=$2&tipo_pagina=vagas [NC,L]
+RewriteRule ^produto/([a-z-0-9-]+)/([a-z-0-9-]+)/?$ /produto.php?id=$1 [NC,L]
+RewriteRule ^fale-conosco/?$ /fale-conosco.php [NC,L]
+RewriteRule ^produtos/([a-z-0-9-]+)/?$ /produtos.php?categoria=$1 [NC,L]
 
-RewriteRule ^programas-estagio/?$ /programas-list.php?pagina=1&tipo_pagina=programas [NC,L]
-RewriteRule ^programas-estagio-([0-9]+)/?$ /programas-list.php?pagina=$1&tipo_pagina=programas [NC,L]
-RewriteRule ^programas-estagio/([a-z-0-9-]+)-([a-z-0-9-]+)/?$ /default-view.php?id=$2&tipo_pagina=programas [NC,L]
+       #CLIENTE
+       RewriteRule ^cliente/login/?$ /cliente-login.php [NC,L]
+       RewriteRule ^cliente/cadastrar/?$ /cliente-cadastrar.php [NC,L]
+       RewriteRule ^cliente/?$ /cliente-painel.php [NC,L]
+       RewriteRule ^cliente/logout/?$ /cliente-logout.php [NC,L]
+       RewriteRule ^cliente/carrinho/?$ /cliente-carrinho.php [NC,L]
+       RewriteRule ^cliente/finalizar-compra/([a-z-0-9-]+)/?$ /cliente-finalizar-compra.php?codigo=$1 [NC,L]
+       RewriteRule ^cliente/pedido/([a-z-0-9-]+)/?$ /cliente-pedido.php?codigo=$1 [NC,L]
+       RewriteRule ^cliente/dados/?$ /cliente-dados-cadastrados.php [NC,L]
 
-
-RewriteRule ^home/?$ /index.php [NC,L]   
-RewriteRule ^fale-conosco/?$ /fale-conosco.php?fale-conosco=1 [NC,L]   
-
-RewriteRule ^eventos/?$ /default-list.php?pagina=1&tipo_pagina=eventos [NC,L]
-RewriteRule ^eventos-([0-9]+)/?$ /default-list.php?pagina=$1&tipo_pagina=eventos [NC,L]
-RewriteRule ^eventos/([a-z-0-9-]+)-([a-z-0-9-]+)/?$ /default-view.php?id=$2&tipo_pagina=eventos [NC,L]
-
-RewriteRule ^preservacao/?$ /default-list.php?pagina=1&tipo_pagina=preservacao [NC,L]
-RewriteRule ^preservacao-([0-9]+)/?$ /default-list.php?pagina=$1&tipo_pagina=preservacao [NC,L]
-RewriteRule ^preservacao/([a-z-0-9-]+)-([a-z-0-9-]+)/?$ /default-view.php?id=$2&tipo_pagina=preservacao [NC,L]
-
-RewriteRule ^sustentabilidade/?$ /default-list.php?pagina=1&tipo_pagina=sustentabilidade [NC,L]
-RewriteRule ^sustentabilidade-([0-9]+)/?$ /default-list.php?pagina=$1&tipo_pagina=sustentabilidade [NC,L]
-RewriteRule ^sustentabilidade/([a-z-0-9-]+)-([a-z-0-9-]+)/?$ /default-view.php?id=$2&tipo_pagina=sustentabilidade [NC,L]
-
-RewriteRule ^fotos/?$ /default-list.php?pagina=1&tipo_pagina=fotos [NC,L]
-RewriteRule ^fotos-([0-9]+)/?$ /default-list.php?pagina=$1&tipo_pagina=fotos [NC,L]
-RewriteRule ^fotos/([a-z-0-9-]+)-([a-z-0-9-]+)/?$ /default-view.php?id=$2&tipo_pagina=fotos [NC,L]
-
-RewriteRule ^institucional/?$ /default-view.php?tipo_pagina=institucional [NC,L]
-
-####
-
-
-
-# URL admin
-RewriteRule ^admin/usuarios/?$ /admin/index.php?dir=usuarios&page=list [NC,L,QSA]
-RewriteRule ^admin/usuarios/adicionar/?$ /admin/index.php?dir=usuarios&page=adicionar [NC,L,QSA]
-RewriteRule ^admin/usuarios/editar-([a-z-0-9-]+)?$ /admin/index.php?dir=usuarios&page=editar&id=$1 [NC,L]
-RewriteRule ^lixeira/admin/usuarios/?$ /admin/index.php?dir=usuarios&page=lixeira [NC,L]
-RewriteRule ^admin/usuarios/editar-([a-z-0-9-]+)?$ /admin/index.php?dir=usuarios&page=editar&id=$1 [NC,L]
-
-# URL site
-# RewriteRule ^usuarios/?$ /default-list.php?pagina=1&tipo_pagina=usuarios [NC,L]
-# RewriteRule ^usuarios-([0-9]+)/?$ /default-list.php?pagina=$1&tipo_pagina=usuarios [NC,L]
-# RewriteRule ^usuarios/([a-z-0-9-]+)-([a-z-0-9-]+)/?$ /default-view.php?id=$2&tipo_pagina=usuarios [NC,L]
-
-
-# URL admin
-RewriteRule ^admin/grupos_usuarios/?$ /admin/index.php?dir=grupos_usuarios&page=list [NC,L,QSA]
-RewriteRule ^admin/grupos_usuarios/adicionar/?$ /admin/index.php?dir=grupos_usuarios&page=adicionar [NC,L,QSA]
-RewriteRule ^admin/grupos_usuarios/editar-([a-z-0-9-]+)?$ /admin/index.php?dir=grupos_usuarios&page=editar&id=$1 [NC,L]
-RewriteRule ^lixeira/admin/grupos_usuarios/?$ /admin/index.php?dir=grupos_usuarios&page=lixeira [NC,L]
-RewriteRule ^admin/grupos_usuarios/editar-([a-z-0-9-]+)?$ /admin/index.php?dir=grupos_usuarios&page=editar&id=$1 [NC,L]
-
-# URL site
-# RewriteRule ^grupos_usuarios/?$ /default-list.php?pagina=1&tipo_pagina=grupos_usuarios [NC,L]
-# RewriteRule ^grupos_usuarios-([0-9]+)/?$ /default-list.php?pagina=$1&tipo_pagina=grupos_usuarios [NC,L]
-# RewriteRule ^grupos_usuarios/([a-z-0-9-]+)-([a-z-0-9-]+)/?$ /default-view.php?id=$2&tipo_pagina=grupos_usuarios [NC,L]
-
-
-
-</IfModule>
-<IfModule mod_rewrite.c>
-### WebP Support
-       RewriteCond %{HTTP_ACCEPT} image/webp
-       RewriteCond %{REQUEST_FILENAME} (.*).jpg$
-       RewriteCond %1\.webp -f
-       RewriteRule (.*).jpg$ $1.webp [T=image/webp,E=accept:1]
-       RewriteCond %{HTTP_ACCEPT} image/webp
-       RewriteCond %{REQUEST_FILENAME} (.*).jpeg$
-       RewriteCond %1\.webp -f
-       RewriteRule (.*).jpeg$ $1.webp [T=image/webp,E=accept:1]
-
-       RewriteCond %{HTTP_ACCEPT} image/webp
-       RewriteCond %{REQUEST_FILENAME} (.*).png$
-       RewriteCond %1\.webp -f
-       RewriteRule (.*).png$ $1.webp [T=image/webp,E=accept:1]
 </IfModule>
 <IfModule mod_headers.c>
 Header append Vary Accept env=REDIRECT_accept

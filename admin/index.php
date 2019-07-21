@@ -2,6 +2,8 @@
 
        require_once('engine/config.php');
 
+       require_once('../engine/connect.php');
+
 ?>
 
 <!DOCTYPE html>

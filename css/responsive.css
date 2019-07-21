@@ -1,0 +1,197 @@
+@media(max-width: 600px){
+
+       .container-carousel {
+
+              width: 100% !important;
+
+              max-width: 100% !important;
+
+              padding: 0px;
+
+       }
+
+       section#topo .container .right-case .logar {
+
+              display: none;
+
+       }
+
+       section#topo nav {
+
+              position: fixed;
+
+              left: -100%;
+
+              top: 0;
+
+              z-index: 99999999999999999999;
+
+              height: 100%;
+
+              overflow: hidden;
+
+              width: 70%;
+
+              transition: all .2s ease-in-out
+
+       }
+
+       section#topo nav.activated {
+
+              left: 0;
+              
+       }
+
+       section#topo nav ul {
+
+              display: block;
+
+              width: 100%;
+              
+       }
+
+       section#topo nav ul li {
+
+              padding: 10px;
+
+       }
+
+       section#topo nav .top-bar {
+
+              width: 100%;
+
+              background-color: #201f24;
+
+              display: block;
+
+       }
+
+       section#topo nav .top-bar .login {
+
+              display: flex;
+
+              align-items: center;
+
+       }
+
+       section#topo nav .top-bar .login i {
+
+              color: white;
+
+              border: 1px solid white;
+
+              border-radius: 100px;
+
+              padding: 5px;
+
+       }
+
+       section#topo nav .top-bar .login span {
+
+              font-family: 'Roboto', sans-serif;
+
+              color: white;
+
+              padding: 20px 0px 20px 10px;
+
+              text-transform: uppercase;
+
+              font-weight: bold;
+
+              font-size: 14px;
+
+       }
+
+       section#topo nav .top-bar .right-case i {
+
+              color: white;
+
+              cursor: pointer;
+
+              font-size: 30px;
+
+       }
+
+       section#topo .container .left-case i {
+
+              display: inline-block;       
+       }
+
+       .background-gray.activated{
+
+              opacity: 0.8;
+
+              visibility: visible;
+
+       }
+
+       footer .footer-title {
+
+              text-align: center;
+
+       }
+
+       footer .map-text { 
+
+              text-align: center;
+
+       }
+
+       footer .bottom-footer .container {
+
+              display: block;
+
+       }
+
+       footer .bottom-footer .left-text {
+
+              display: block;
+
+              text-align: center;
+
+       }
+
+       footer .bottom-footer .right-text {
+
+              display: block;
+
+              text-align: center;
+
+       }
+
+       footer .bottom-footer .right-text .case-icons {
+
+              display: block;
+
+              padding: 10px 0px;
+
+       }
+
+       section#carrinho .bottom-buttons {
+
+              display: block;
+
+              text-align: center;
+
+              padding: 0px 30px 80px 30px;
+
+       }
+
+       section#carrinho .bottom-buttons .preco-total,
+       section#carrinho .bottom-buttons .pagar-local {
+
+              width: 100%;
+
+              text-align: center;
+
+              float: initial;
+
+       }
+
+       section#carrinho .carrinho-produto .row div {
+
+              justify-content: center;
+
+       }
+
+}

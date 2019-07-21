@@ -22,7 +22,7 @@
 
                      <li><a href="/admin/produtos/"><i class="fas fa-box-open"></i><span>Produtos</span></a></li>
 
-                     <li><a href="/"><i class="material-icons">shopping_basket</i><span>Pedidos</span></a></li>
+                     <li><a href="/admin/pedidos"><i class="material-icons">shopping_basket</i><span>Pedidos</span></a></li>
 
                      <li><a href="/admin/logout.php"><i class="fas fa-door-open"></i><span>Sair</span></a></li>
 

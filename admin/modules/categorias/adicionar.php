@@ -66,6 +66,22 @@
 
                                                         <div class="row">
 
+                                                               <div class="col-sm-12">
+
+                                                                      <div class="field-input">
+
+                                                                             <label for="titulo">Tags(SEO): </label>
+
+                                                                             <input type="text" name="tags" class="tags" id="tags" placeholder="Exemplo: camisas, bermudas, bonés" required>
+
+                                                                      </div>
+
+                                                               </div>
+
+                                                        </div>
+
+                                                        <div class="row">
+
                                                                <div class="col-sm-4">
 
                                                                       <div class="field-select">
@@ -172,6 +188,8 @@
 
                                    var categoria_pai = $('.categoria_pai').val();
 
+                                   var tags = $('.tags').val();
+
                                    $.ajax(
 
                                           {
@@ -186,7 +204,9 @@
 
                                                         sub_categoria: sub_categoria,
 
-                                                        categoria_pai: categoria_pai
+                                                        categoria_pai: categoria_pai,
+
+                                                        tags: tags
 
                                                  },
 
